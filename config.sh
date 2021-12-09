@@ -3,8 +3,8 @@
 function install_screenfetch() {
 	wget https://github.com/KittyKatt/screenFetch/archive/master.zip &&
 	unzip master.zip &&
-	mv screenFetch-master/screenfetch-dev /usr/bin/screenfetch &&
-	rm -rf screenFetch-master
+	sudo mv screenFetch-master/screenfetch-dev /usr/bin/screenfetch &&
+	sudo rm -rf screenFetch-master
 }
 
 # Identify the different distributions and call the corresponding function
