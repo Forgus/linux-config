@@ -26,17 +26,17 @@ function multi_distro_installation() {
 }
 function install_dependencies_with_yum() {
     sudo yum install yum-utils
-	sudo yum install -y neovim git ranger npm fish
+	sudo yum install -y neovim git ranger npm fish unzip
 }
 function install_dependencies_with_apt() {
     sudo apt-get update
-    sudo apt-get install -y neovim git ranger npm fish
+    sudo apt-get install -y neovim git ranger npm fish unzip
 }
 function install_dependencies_with_aur() {
-    sudo pacman -S neovim git ranger npm fish --noconfirm
+    sudo pacman -S neovim git ranger npm fish unzip --noconfirm
 }
 function install_dependencies_on_mac_osx() {
-    brew install neovim git ranger npm fish
+    brew install neovim git ranger npm fish unzip
 }
 
 # Entry
